@@ -1,0 +1,55 @@
+@import url("reset.css");
+
+* {
+    color: rgb(0, 162, 255);
+}
+.header {
+    color: blue;
+}
+h1{
+    color: rgb(13, 86, 12);
+}
+#main-text{
+    color: rgb(157, 9, 232);
+}
+[class*="xt"]{
+    color: rgb(161, 16, 139);
+}
+p.text{
+    color: aqua;
+}
+.item.first{
+    color: #ffffff;
+}
+.item.first a{
+    color: #66710e;
+}
+.item.first a span{
+    color: #38f320;
+}
+li{
+    color: rgb(229, 151, 236);
+}
+span,
+.sub-text
+{
+    color: #611601;
+}
+.list li{
+    color: bisque;
+}
+.list .item3{
+    color: #000;
+}
+div * {
+    color: #38f320;
+}
+#home > h2 {
+    color: red;
+}
+h3 ~ .list li{
+    color: #5a0a5f;
+}
+.footer-title + p{
+    color: #08726d;
+}
