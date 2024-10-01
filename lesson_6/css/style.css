@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css?family=Manrope:regular,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Epilogue:regular,800&display=swap");
+@import url("reset.css");
+body{
+  font-family: "Manrope", sans-serif;
+  color: rgb(255, 255, 255);
+  background-color: #1E1E1E;
+}
+.wrapper{
+  min-height: 100%;
+  overflow: hidden;
+}
+.container{
+  max-width: 1627px;
+  margin: 0 auto;
+  padding-inline: 15px;
+}
+.hidden{
+  visibility: hidden;
+}
+.header-title,
+.footer-link{
+  text-align: center;
+  font-weight: 600;
+  font-size: 50px;
+  padding-block: 20px;
+}
+/* Welcome section------------------ */
+.welcome{
+  min-height: 860px;
+  background: url("../img/main-arrow.png") center/ 101px no-repeat,
+  url("../img/abstract-icon.png") center/ 470px no-repeat,
+  linear-gradient(180deg, #141414 0%, rgba(20, 20, 20, 0.00) 100%),
+  linear-gradient(180deg, rgba(20, 20, 20, 0.00) 0%, #141414 100%),
+  url("../img/background-image.png");
+}
+/* Title section------------------ */
+.title{
+  margin-top: -64px;
+  text-align: center;
+  padding-bottom: 50px;
+}
+.main-title{
+  font-size: 58px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+.main-text{
+  max-width: 1096px;
+  margin: 0 auto;
+  color: #999;
+  font-size: 18px;
+  line-height: 1.5;
+  padding: 14px 0 50px;
+}
+.main-btn a{
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.5;
+  background-image: url("../img/btn-arrow.png");
+  background-position: 10px 50%;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+  background-color: #E50000;
+  padding: 18px 24px 18px 44px;
+}
+
+/* Portfolio section--------------- */
+
+
+.portfolio {
+  font-family: "Epilogue", sans-serif;
+  background: #FDF0E9;
+  color:  #391400;
+  padding: 50px 0;
+}
+.portfolio-container {
+  max-width: 1201px;
+  margin: 0 auto;
+  padding-inline: 15px;
+}
+.portfolio-content {
+  max-width: 470px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 167px;
+}
+.features{
+  color:#EF6D58;
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.content-title {
+  font-size: 56px;
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -1px;
+}
+.content-text {
+  color: #391400;
+  font-size: 20px;
+  line-height: 1.6;
+  margin-block: 26px;
+}
+.list-item {
+  color:rgba(57, 20, 0, 0.64);
+  line-height: 2;
+  background: url("../img/check.png") left / 22px no-repeat;
+	padding-left: 36px;
+}
+.portfolio-img {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 529px;
+}
