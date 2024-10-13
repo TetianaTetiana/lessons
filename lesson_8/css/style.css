@@ -1,0 +1,49 @@
+@import url("reset.css");
+body{
+  background-color: #1b94cc;;
+}
+.wrapper{
+  min-height: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+
+}
+.header,
+.footer{
+  text-align: center;
+  font-size: 55px;
+  font-weight: 900;
+}
+.header{
+  margin-bottom: 20px;
+}
+.container{
+  text-align: center;
+  padding-inline: 15px;
+}
+h2{
+  font-size:35px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.img{
+    margin-bottom: 20px;
+}
+.img img{
+    border-radius: 22px;
+    padding: 16px;
+}
+.img a{
+    width: 48px;
+    height: 48px;
+    background-color:rgba(239, 109, 88, 1);
+    border-radius: 50%;
+}
+.footer-link svg{
+    width: 50px;
+    height: 50px;
+    transition: all .5s ease;
+}
+.footer-link svg:hover{
+    fill:rgb(38, 199, 167);
+}
