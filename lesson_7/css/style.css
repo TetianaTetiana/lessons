@@ -182,8 +182,9 @@ p:has(span) {
   padding-inline: 15px;
 }
 .img{
-  min-width: 100%;
+  max-width: 970px;
   margin-bottom: 74px;
+  border-radius: 4px;
 }
 .unnamed-block,
 .named-block,
@@ -240,7 +241,7 @@ p:has(span) {
   list-style: style;
 }
 .second-named-block ol{
-  margin-left: 15px;
+  padding-left: 15px;
 }
 .window {
   border-radius: 6px;
@@ -318,7 +319,6 @@ p:has(span) {
   box-shadow: 1px 1px 17px black;
 }
 .top-card {
-  max-width: 494px;
   border-radius: 34px;
   background: #4A3AFF;
   text-align: center;
@@ -342,7 +342,7 @@ p:has(span) {
   opacity: 0.6;
 }
 .card-list {
-  margin-left: 13px;
+  padding-left: 13px;
 }
 .card-list li:not(:last-child){
   margin-bottom: 26px;
