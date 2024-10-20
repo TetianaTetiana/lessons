@@ -1,0 +1,27 @@
+@import url("reset.css");
+body{
+  background-color: #F2F2F2;
+}
+.wrapper{
+  min-height: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+[class*="__container"]{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-inline: 15px;
+}
+header,
+footer{
+  text-align: center;
+  font-size: 40px;
+}
+.footer__link svg{
+  width: 50px;
+  height: 50px;
+  transition: all .5s ease;
+}
+.footer__link svg:hover{
+  fill:rgb(173, 18, 178);
+}
