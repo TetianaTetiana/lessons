@@ -1,0 +1,192 @@
+@import url("reset.css");
+@import url("https://fonts.googleapis.com/css?family=Epilogue:regular,800&display=swap");
+
+body {
+  background-color: #F2F2F2;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+[class*="__container"] {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-inline: 15px;
+}
+
+header,
+footer {
+  text-align: center;
+  font-size: 40px;
+  padding-block: 15px;
+}
+
+/* -------------------------------------------- */
+.images {
+  background-color: #28293e;
+  padding: 15px 0;
+}
+
+.images__container {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+}
+
+.images__group {
+  position: relative;
+  min-height: 602px;
+}
+
+.images__group::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -185px 0 0 -185px;
+  width: 370px;
+  height: 370px;
+  border-radius: 50%;
+  background-color: rgba(50, 51, 76, 1);
+}
+
+.images__img {
+  position: relative;
+}
+
+.images__img img {
+  position: relative;
+  border-radius: 6px;
+}
+
+.images__img::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 246px;
+  height: 305px;
+  border-radius: 150px 150px 10px 10px;
+  background-color: #F7CC47;
+}
+
+.images__img--violet::before {
+  background-color: #b550f8;
+}
+
+.images__img--violet {
+  padding: 24px 0 0 21px;
+}
+
+.images__img--violet::after {
+  content: "";
+  position: absolute;
+  bottom: -126px;
+  left: 0;
+  width: 142px;
+  height: 73px;
+  background: url("../img/shape.svg") center / contain no-repeat;
+}
+
+.images__img--yellow {
+  position: absolute;
+  padding-top: 37px;
+  bottom: 108px;
+  right: 0;
+}
+
+.images__img--yellow::after {
+  content: "";
+  position: absolute;
+  bottom: -95px;
+  left: -10px;
+  width: 94px;
+  height: 50px;
+  background: url("../img/arrow.svg") center / contain no-repeat;
+}
+
+.images__decore {
+  position: absolute;
+}
+
+.images__decore--stars {
+  background-color: #ef6d58;
+  border-radius: 50%;
+  text-align: center;
+  top: 40px;
+  right: 155px;
+  width: 112px;
+  height: 112px;
+  padding: 28px 35px;
+}
+
+.images__decore--stars::before {
+  content: "";
+  position: absolute;
+  top: 40px;
+  left: 154px;
+  width: 112px;
+  height: 82px;
+  background: url("../img/cloud.svg") center / contain no-repeat;
+}
+
+.images__decore--window {
+  left: 56px;
+  bottom: 59px;
+}
+
+.footer__link svg {
+  width: 50px;
+  height: 50px;
+  transition: all .5s ease;
+}
+
+.footer__link svg:hover {
+  fill: rgb(173, 18, 178);
+}
+
+/* ---------------------------------------------------- */
+
+.cards {
+  background-color: rgba(40, 41, 62, 1);
+  text-align: center;
+  color: #fff;
+  padding-block: 15px;
+  font-family: "Epilogue", sans-serif;
+}
+
+.cards__item {
+  width: 100%;
+  position: relative;
+}
+
+.cards__img--overlay {
+  position: absolute;
+  bottom: 0px;
+  left: 361px;
+}
+
+.cards__button {
+  position: absolute;
+  color: #391400;
+  font-size: 16px;
+  line-height: 2;
+  border-radius: 19px;
+  background: #FFF;
+  padding: 5px 15px 1px 15px;
+  bottom: 122px;
+  left: 410px;
+}
+
+.cards__title {
+  position: absolute;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 1.2;
+  text-transform: uppercase;
+  bottom: 50px;
+  left: 410px;
+}
