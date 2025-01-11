@@ -1,0 +1,229 @@
+@import url("reset.css");
+@import url("https://fonts.googleapis.com/css?family=Epilogue:regular,800&display=swap");
+
+body {
+  background-color: #93e2fa;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+[class*="__container"] {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-inline: 15px;
+}
+
+.main-container {
+  text-align: center;
+}
+
+header,
+footer {
+  text-align: center;
+  font-size: 40px;
+  padding-block: 15px;
+}
+
+
+.list {
+  margin-top: 20px;
+  margin-left: -5px;
+  margin-right: -5px;
+  margin-bottom: 50px;
+  font-size: 0;
+  text-align: center;
+}
+
+.list__items {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  margin-block: 10px;
+  margin-inline: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+  background-color: #201c1c66;
+  perspective-origin: center;
+  perspective: 200px;
+}
+
+.list__item {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  margin-inline: -5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+  background-color: #0b49ad66;
+  transition: all .5s ease;
+  font-size: 16px;
+}
+
+.translate:hover {
+  transform: translate(10px, 10px);
+}
+
+.scale:hover {
+  transform: scale(.8);
+  border-radius: 50%;
+}
+
+.rotate:hover {
+  transform: rotate(-35deg);
+  transform-origin: top left;
+  /* transform: rotate3d(0, 1, 0, 60deg); */
+}
+
+.skew:hover {
+  transform: skew(10deg, 10deg);
+}
+
+.perspectiveX:hover {
+  transform: rotateX(65deg);
+}
+
+.perspectiveY:hover {
+  transform: rotateY(65deg);
+}
+
+.perspectiveX:hover {
+  transform: rotateX(65deg);
+}
+
+.translate3D:hover {
+  transform: translate3d(10px, 20px, 30px);
+}
+
+.rotate3D:hover {
+  transform: rotate3d(50, 50, 200, 150deg);
+}
+
+.transform-style {
+  transform-style: preserve-3d;
+}
+
+.transform-style__item:hover {
+  transform: rotateX(45deg);
+}
+
+.smile {
+  display: inline-block;
+  text-align: center;
+}
+
+.smile__body {
+  position: relative;
+  perspective: 800px;
+}
+
+.smile__back,
+.smile__front {
+  transition: all 0.3s;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.smile__back {
+  transform: rotateY(180deg);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.smile__front {
+  backface-visibility: hidden;
+  transform: rotateY(0deg);
+}
+
+.smile__body:hover .smile__back {
+  transform: rotateY(0deg);
+}
+
+.smile__body:hover .smile__front {
+  transform: rotateY(180deg);
+}
+
+.smile img {
+  width: 120px;
+  height: 120px;
+}
+
+.auto {
+  position: relative;
+}
+
+.auto img {
+  width: 100%;
+}
+
+.auto__body {
+  width: 770px;
+  height: 270px;
+  border-radius: 90px 20px 20px 20px;
+  background-color: #e44e4e;
+  border: 15px double rgb(14, 68, 9);
+  margin: 0 auto;
+}
+
+.auto__body::after {
+  content: "";
+  width: 741px;
+  height: 20px;
+  background-color: #c1c6ef;
+}
+
+.autobus li {
+  margin-inline: 15px;
+  border-radius: 10px;
+  background-color: #93e2fa;
+}
+
+.wheel {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #eee;
+  border: 10px dashed #264048;
+  position: absolute;
+  bottom: 465px;
+  left: 500px;
+}
+
+.wheel::after {
+  content: "";
+  width: 50px;
+  height: 50px;
+  background-color: #000;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.wheel-back {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #eee;
+  border: 10px dashed #264048;
+  position: absolute;
+  bottom: 465px;
+  left: 950px;
+}
+
+.footer__link svg {
+  width: 50px;
+  height: 50px;
+  transition: all .5s ease;
+}
+
+.footer__link svg:hover {
+  fill: rgb(12, 130, 120);
+}
