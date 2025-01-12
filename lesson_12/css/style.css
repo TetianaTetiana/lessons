@@ -1,0 +1,151 @@
+@import url("reset.css");
+@import url("https://fonts.googleapis.com/css?family=Epilogue:regular,800&display=swap");
+
+body {
+  background-color: #91d2d4;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+[class*="__container"] {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-inline: 15px;
+}
+
+header,
+footer {
+  text-align: center;
+  font-size: 40px;
+  padding-block: 15px;
+}
+
+.auto {
+  position: relative;
+  width: 100%;
+  z-index: 3;
+}
+
+.auto__list {
+  margin-top: 20px;
+  margin-left: -5px;
+  margin-right: -5px;
+  margin-bottom: 50px;
+  font-size: 0;
+  text-align: center;
+}
+
+.list__item {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  margin-block: 10px;
+  margin-inline: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+  background-color: #201c1c66;
+  perspective-origin: center;
+  perspective: 200px;
+}
+
+.list li {
+  margin-inline: 15px;
+  border-radius: 10px;
+  background-color: #93e2fa;
+}
+
+.auto__body {
+  width: 770px;
+  height: 270px;
+  border-radius: 20px 90px 20px 20px;
+  background-color: #e44e4e;
+  border: 15px double rgb(14, 68, 9);
+  margin: 0 auto;
+  z-index: 7;
+}
+
+.auto__body::after {
+  content: "";
+  width: 741px;
+  height: 20px;
+  background-color: #c1c6ef;
+}
+
+.auto__wheels {
+  position: relative;
+  z-index: 5;
+}
+
+.wheel {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #eee;
+  border: 10px dashed #000;
+  position: absolute;
+  bottom: -45px;
+  left: 300px;
+  animation: wheels 3s linear infinite;
+}
+
+.wheel-back {
+  left: 770px;
+  animation: wheels 3s linear infinite;
+}
+
+.wheel::after {
+  content: "";
+  width: 50px;
+  height: 50px;
+  background-color: #000;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+@keyframes wheels {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.road {
+  background-image: url(../img/road.png);
+  background-repeat: repeat-x;
+  width: 500%;
+  height: 400px;
+  position: absolute;
+  bottom: 250px;
+  left: 0;
+  animation: road 15s linear infinite;
+}
+
+@keyframes road {
+  100% {
+    transform: translateX(-4000px);
+  }
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 47%;
+}
+
+.footer__link svg {
+  width: 50px;
+  height: 50px;
+  transition: all .5s ease;
+}
+
+.footer__link svg:hover {
+  fill: rgb(12, 130, 120);
+}
