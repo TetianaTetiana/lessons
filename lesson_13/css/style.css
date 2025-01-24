@@ -1,0 +1,464 @@
+@import url("reset.css");
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+  background-color: #28293e;
+  font-family: 'Epilogue';
+  font-size: 16px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.wrapper>main {
+  flex-grow: 1;
+}
+
+[class*="__container"] {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-inline: 15px;
+}
+
+header,
+footer {
+  text-align: center;
+  font-size: 40px;
+  padding-block: 15px;
+}
+
+/* ------------------------------------- */
+.portfolio {
+  /* background-color: #28293e; */
+  color: #fff;
+  padding: 91px 0px 176px 0px;
+}
+
+.portfolio__heading {
+  margin-bottom: 44px;
+}
+
+.heading {
+  text-align: center;
+}
+
+.heading__subtitle {
+  color: #EF6D58;
+  line-height: 2;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.heading__title {
+  color: var(--Text_Light, #FFF);
+  font-size: 56px;
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -1px;
+}
+
+/* ------------------------------------ */
+.portfolio__nav {
+  margin-bottom: 68px;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+}
+
+.nav__item {
+  color: rgba(255, 255, 255, 0.64);
+  line-height: 2;
+  transition: color .5s ease;
+}
+
+.nav__item:hover {
+  color: #FFF;
+}
+
+.nav__item--active {
+  color: #FFF;
+}
+
+/* ------------------------------------- */
+.portfolio__cards {
+  margin-bottom: 64px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 1 auto;
+  column-gap: 30px;
+  row-gap: 32px;
+}
+
+.cards__item {
+  position: relative;
+  border-radius: 6px;
+}
+
+.cards__item::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #5c2000;
+  opacity: 0.3181;
+  width: 100%;
+  height: 100%;
+}
+
+.cards__item img {
+  border-radius: 6px;
+  width: 100%;
+}
+
+.cards__name {
+  z-index: 2;
+  position: absolute;
+  left: 48px;
+  bottom: 51px;
+}
+
+.cards__subtitle {
+  display: inline-block;
+  color: #391400;
+  line-height: 2;
+  background-color: #fff;
+  padding: 5px 16px 1px 16px;
+  z-index: 9;
+  border-radius: 19px;
+  margin-bottom: 24px;
+  transition: all .5s ease;
+}
+
+.cards__subtitle:hover {
+  color: #fff;
+  background-color: #391400;
+  box-shadow: 1px 1px 12px #391400;
+}
+
+.cards__title {
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.portfolio__button {
+  margin-bottom: 190px;
+  text-align: center;
+}
+
+.button a {
+  font-size: 14px;
+  font-weight: 900;
+  text-transform: uppercase;
+  padding: 18px 30px 16px 31px;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.30);
+  transition: all .5s ease;
+}
+
+.button--dark:hover {
+  border: 1px solid rgb(255, 255, 255);
+  box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.30);
+}
+
+/* ---------------------------------- */
+
+.portfolio-contacts {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  background-color: rgba(253, 240, 233, 1);
+  border-radius: 6px;
+  padding: 80px 83px 60px 100px;
+  margin-bottom: 140px;
+}
+
+.contacts__heading {
+  margin-top: 14px;
+}
+
+.contacts__heading::before {
+  content: "";
+  position: absolute;
+  top: -75px;
+  left: 84px;
+  background: url(../img/gift-icon.svg) 0px 0px no-repeat;
+  width: 148px;
+  height: 148px;
+  animation: pulse 2.5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.contacts__subtitle {
+  color: #EF6D58;
+  line-height: 2;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.contacts__title {
+  color: #391400;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.3;
+  width: 248px;
+  margin: 13px 0px 23px 0px;
+}
+
+.button--red {
+  background-color: rgba(239, 109, 88, 1);
+  border-radius: none;
+  transition: all .5s ease;
+}
+
+.button--red:hover {
+  box-shadow: 1px 2px 8px rgb(0, 0, 0);
+}
+
+.contacts__middle {
+  margin-left: 68px;
+}
+
+.girl img {
+  position: absolute;
+  bottom: 0;
+  right: 83px;
+  z-index: 2;
+}
+
+.girl::before {
+  content: "";
+  position: absolute;
+  bottom: 45px;
+  right: 95px;
+  background: url(../img/bg-line.svg) 0px 0px no-repeat;
+  width: 282px;
+  height: 242px;
+}
+
+/* ------------------------------ */
+
+.portfolio__events {
+  margin-bottom: 140px;
+}
+
+.events__heading {
+  margin-bottom: 64px;
+}
+
+.heading__title--width {
+  max-width: 426px;
+  margin: 0 auto;
+}
+
+.events__calendar {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 1 370px;
+  gap: 30px;
+  margin-bottom: 64px;
+}
+
+.calendar__card {
+  padding: 36px 39px;
+  border: 1px solid #3A3C56;
+  border-radius: 6px;
+  transition: all .5s ease;
+}
+
+.calendar__card:hover {
+  box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.64);
+}
+
+.calendar__date {
+  font-size: 72px;
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -2px;
+}
+
+.calendar__mounth {
+  display: inline-block;
+  width: 127px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.3;
+  margin: 0px 0px 19px 0px;
+}
+
+.calendar__hours {
+  line-height: 2;
+  margin-bottom: 77px;
+}
+
+.calendar__hours::before {
+  content: "";
+  background: url(../img/clock.svg) center no-repeat;
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+.calendar__title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.calendar__text {
+  color: rgba(255, 255, 255, 0.64);
+  max-width: 290px;
+  line-height: 2;
+  margin: 19px 0px 33px 0px;
+}
+
+.calendar__link {
+  line-height: 2;
+  transition: all .5s ease;
+}
+
+.calendar__link:hover {
+  border: solid 1px rgb(255, 255, 255, 0.5);
+  padding: 5px 10px;
+  border-radius: 6px;
+  box-shadow: 1px 2px 10px #fff;
+}
+
+.events__button {
+  text-align: center;
+}
+
+/* ------------------------------ */
+.portfolio__team {
+  margin-bottom: 338px;
+}
+
+.team__heading {
+  text-align: left;
+  margin-bottom: 64px;
+}
+
+.heading__title--start {
+  max-width: 531px;
+}
+
+.team__list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 30px;
+  row-gap: 110px;
+  justify-content: space-between;
+}
+
+.list__item {
+  border-radius: 6px;
+  border: 1px solid #3A3C56;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex: 1 1 270px;
+  min-height: 272px;
+  width: 100%;
+  position: relative;
+  transition: all .5s ease;
+}
+
+.list__item:hover {
+  box-shadow: 1px 1px 5px #ffffffb4;
+  transform: scale(1.03);
+}
+
+.name {
+  position: absolute;
+  bottom: -90px;
+  right: 0;
+  width: 100%;
+}
+
+.name__title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.name__description {
+  color: rgba(255, 255, 255, 0.64);
+  line-height: 2;
+}
+
+/* ------------------------------ */
+.portfolio__founder {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.founder__heading {
+  text-align: left;
+}
+
+.heading__title--founder {
+  max-width: 470px;
+  font-size: 40px;
+  margin: 33px 0px 44px 0px;
+  position: relative;
+}
+
+.heading__title--founder::before {
+  content: "";
+  background: url(../img/quotes.svg);
+  width: 100px;
+  height: 80px;
+  position: absolute;
+  top: -56px;
+  right: 46px;
+  z-index: -1;
+  animation: pulse 2.5s infinite;
+}
+
+.heading__name__title {
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+.heading__name__description {
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/* ------------------------------ */
+.footer__link svg {
+  width: 50px;
+  height: 50px;
+  transition: all .5s ease;
+}
+
+.footer__link svg:hover {
+  fill: rgb(247, 25, 199);
+}
