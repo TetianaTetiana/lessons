@@ -1,0 +1,252 @@
+@import url("reset.css");
+@import url("https://fonts.googleapis.com/css?family=Manrope:regular,500,600,700,800&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Work+Sans:regular,600&display=swap");
+
+body {
+  font-family: 'Manrope', sans-serif;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.wrapper>main {
+  flex-grow: 1;
+}
+
+/* [class*="__container"] {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-inline: 15px;
+} */
+
+header,
+footer {
+  text-align: center;
+  font-size: 40px;
+  padding-block: 15px;
+}
+/* ---------------------Чорна Форма------------------- */
+.dark{
+  background: #0F0F0F;
+  color: #999;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.5;
+  margin: 0 auto;
+  padding: 50px;
+  max-width: 980px;
+  border: 1px solid #262626;
+  border-radius: 12px;
+  margin-bottom: 50px;
+}
+
+.dark-form__top-field {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  margin-bottom: 50px;
+}
+
+.dark-form__input-field {
+  flex-basis: 413px;
+  flex-grow: 1;
+}
+
+.input-field__label {
+  display: block;
+  color: #FFF;
+  margin-bottom: 16px;
+}
+
+.input-field__input {
+  padding: 20px;
+  border: 1px solid #262626;
+  border-radius: 8px;
+  background: #141414;
+  transition: all .5s ease;
+}
+
+.input-field__textarea {
+  min-height: 163px;
+  resize: vertical;
+  flex-basis: 876px;
+  flex-grow: 1;
+  padding: 20px;
+  border: 1px solid #262626;
+  border-radius: 8px;
+  background: #141414;
+  transition: all .5s ease;
+}
+
+.dark-form__bottom-field {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 70px;
+}
+
+.checkbox-lable {
+  font-weight: 400;
+}
+
+.dark-form__button {
+  color: #FFF;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+  padding: 18px 24px;
+  background-color: #e50000;
+  border-radius: 8px;
+  transition: .5s ease;
+}
+
+.dark-form__button:hover {
+  box-shadow: 1px 1px 5px #ffffff;
+
+}
+
+.input-field__input:focus,
+.input-field__input:hover,
+.input-field__textarea:focus,
+.input-field__textarea:hover {
+  background: #3b3b3b;
+}
+
+.checkbox-input {
+  appearance: none;
+}
+
+.checkbox-input:checked+.checkbox-lable::before {
+  background: url("../img/check-mark.svg") 0 0 / 100% no-repeat;
+}
+
+.checkbox-lable {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.checkbox-lable::before {
+  content: '';
+  width: 28px;
+  height: 28px;
+  border-radius: 4px;
+  border: 1px solid #262626;
+}
+/* ---------------Біла Форма---------------------- */
+.white {
+  font-family: "Work Sans", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  padding: 15px;
+  max-width: 590px;
+  margin: 0 auto;
+  background-color: #fff;
+  color: #697484;
+  box-shadow: 1px 1px 15px #000;
+  border-radius: 10px;
+}
+
+.white__text {
+  margin-bottom: 50px;
+}
+
+.white__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 24px;
+  align-items: flex-start;
+}
+
+.white__input {
+  outline: none;
+  padding-bottom: 14px;
+  border-bottom: 1.5px solid #E6E8EB;
+  transition: all .5s ease;
+}
+
+.white__input:focus,
+.white__textarea:focus {
+  border-bottom: 1.5px solid #A53DFF;
+}
+
+.white__input:focus::placeholder,
+.white__textarea:focus::placeholder {
+  color: #A53DFF;
+}
+
+.short-inputs {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.budget {
+  flex-basis: 200px;
+}
+
+.subject {
+  flex-basis: 336px;
+}
+
+.white__textarea {
+  min-height: 24px;
+  outline: none;
+  padding-bottom: 14px;
+  border-bottom: 1.5px solid #E6E8EB;
+  resize: vertical;
+}
+
+.white__button {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  padding: 12px 24px;
+  border-radius: 4px;
+  background: #A53DFF;
+  color: #FFF;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  align-items: center;
+  transition: all .5s ease;
+}
+
+.white__button::after {
+  content: '';
+  width: 24px;
+  height: 24px;
+  background: url("../img/arrow.svg") center / 100% no-repeat;
+  transition: all .5s ease;
+}
+
+.white__button:hover{
+  box-shadow: 1px 1px 5px #3c155d;
+}
+
+.white__button:active {
+  transform: scale(0.95);
+}
+
+/* ------------------------------ */
+.footer__link svg {
+  width: 50px;
+  height: 50px;
+  transition: all .5s ease;
+}
+
+.footer__link svg:hover {
+  fill: rgb(247, 25, 199);
+}
